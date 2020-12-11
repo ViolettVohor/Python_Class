@@ -1,5 +1,5 @@
 n = int(input('Digite um número inteiro: '))
-print('-' * 12)
+print('\033[34m-' * 12)
 print(f' 0 x {n} = {n * 0}')
 print(f' 1 x {n} = {n * 1}')
 print(f' 2 x {n} = {n * 2}')

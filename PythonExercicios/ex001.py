@@ -1,2 +1,2 @@
-msg = 'Olá, Mundo!'
+msg = '\033[32;1mOlá, Mundo!'
 print(msg)
