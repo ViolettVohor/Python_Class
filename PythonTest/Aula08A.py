@@ -1,3 +1,3 @@
 from math import sqrt, floor
 n = int(input('Digite um número: '))
-print('A raiz de {} é igual á {:.2f}'.format(n, floor(sqrt(n))))
+print(f'A raiz de {n} é igual á {floor(sqrt(n)):.2f}')

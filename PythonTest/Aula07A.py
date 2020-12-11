@@ -6,5 +6,5 @@
 
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite outro: '))
-print('A soma vale {}, \no produto vale {} \ne a divisão vale {:.3f}, '.format(n1 + n2, n1 * n2, n1 / n2), end='')
-print('A divisão inteira vale {}, o resto vale {} e a potência vale {}'.format(n1 // n2, n1 % n2, n1 ** n2))
+print(f'A soma vale {n1 + n2}, \nO produto vale {n1 * n2} \nE a divisão vale {n1 / n2:.3f}, ', end='')
+print(f'A divisão inteira vale {n1 // n2}, o resto vale {n1 % n2} e a potência vale {n1 ** n2}')

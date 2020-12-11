@@ -1,5 +1,6 @@
 sal = float(input('Digite seu salário: R$'))
 if sal <= 1250:
-    print(f'Seu novo salário é {sal * 1.15:.2f}')
+    novo = sal * 1.15
 else:
-    print(f'Seu novo salário é {sal * 1.10:.2f}')
+    novo = sal * 1.1
+print(f'Seu antigo salário era {sal} e o seu novo salário é {novo:.2f}')
