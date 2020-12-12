@@ -1,2 +1,2 @@
 n = input('Digite seu nome completo: ').strip()
-print(f'Em seu nome tem Silva? {"silva" in n.lower()}')
+print(f'Em seu nome tem Silva? \033[35m{"silva" in n.lower()}')
