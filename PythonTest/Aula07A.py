@@ -2,7 +2,7 @@ nome = input('Qual seu nome? ')
 print('Prazer em te conhecer, {:20}!'.format(nome))
 print('Prazer em te conhecer, {:_<20}!'.format(nome))
 print('Prazer em te conhecer, {:->20}!'.format(nome))
-print('Prazer em te conhecer, {:^20}!'.format(nome))
+print('{:^20}, {:^20}!'.format('Prazer em te conhecer', nome))
 
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite outro: '))
