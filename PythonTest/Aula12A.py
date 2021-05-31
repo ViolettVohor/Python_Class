@@ -8,3 +8,5 @@ elif nome in 'MADELEINE OLIVIA MARY SAM PEARL':
 # else:
 #     print('Seu nome é bem normal!')
 print(f'Tenha um bom dia, \033[36;1m{nome}!')
+
+# Exercícios: 36 - 45

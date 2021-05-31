@@ -14,3 +14,5 @@ print('Parabéns, você foi Aprovado!' if m >= 6 else 'Você foi Reprovado! Se e
 #    print('Você reprovou, se esforce mais')
 # else:
 #    print('Parabéns, você foi aprovado')
+
+# Exercícios: 28 - 35

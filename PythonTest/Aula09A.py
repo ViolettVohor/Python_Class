@@ -18,3 +18,5 @@ aflçjsafjçjasjfçasjf
 asdfçjasljfçjas
 fslçajfsçafk
 sflçsjdkfjçsfj""")'''
+
+# Exercícios: 22 - 27

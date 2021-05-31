@@ -22,3 +22,5 @@ print('Fim')
 for c in range(0, 7, 2):
     print(c)
 print('Fim')'''
+
+# Exercícios: 46 - 56

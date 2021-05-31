@@ -12,3 +12,5 @@ cores = {'limpa': '\033[m',
 
 nome = 'Oliver'
 print('Olá! Muito prazer em te conhecer, {}{}{}!!!'.format(cores['verde'], nome, cores['limpa']))
+
+# Exercícios: Colocar cores em todos os exercícios até agora
