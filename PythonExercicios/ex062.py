@@ -1,13 +1,20 @@
-a1 = int(input('Digite o 1° termo de uma PA: '))
-r = int(input('Digite a razão dessa PA: '))
-an = a1
-n = 10
-c = 0
+print('Gerador de PA\n' + '-='*7)
 
-while an < a1 + n * r:
-    print(an, end=' -> ')
-    an += r
-    c += 1
-    if c == n:
-        n += int(input('\nVocê quer que repita mais quantas vezes? '))
-print('Acabou')
+a1 = int(input('Primeiro termo: '))
+r = int(input('Razão da PA: '))
+n = 10
+cont = 0
+mais = 1
+
+while mais != 0:
+    while cont < n:
+        print(a1, end=' -> ')
+        a1 += r
+        cont += 1
+        '''if cont == n:
+            print('PAUSA')
+            n += int(input('Você quer que repita mais quantas vezes? '))'''
+    print('PAUSA')
+    mais = int(input('Você quer que repita mais quantas vezes? '))
+    n += mais
+print(f'Progressão finalizada com {cont} termos mostrados')

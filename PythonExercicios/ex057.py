@@ -1,9 +1,5 @@
-sexo = ' '
+sexo = input('Digite o seu sexo [M/F]: ').upper().strip()[0]
 verd = True
-while verd:
-    sexo = input('Digite o seu sexo [M/F]: ').upper()
-    if sexo == 'M' or sexo == 'F':
-        verd = False
-    else:
-        print('Digite um valor valido')
-print(f'Seu sexo é {sexo}')
+while sexo not in 'MF':
+        sexo = input('Dados inválidos. Por favor, informe seu sexo: ').upper().strip()[0]
+print(f'Sexo {sexo} registrado com sucesso')

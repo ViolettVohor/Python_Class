@@ -1,11 +1,7 @@
-num = 0
 resp = 'S'
-soma = 0
-cont = 0
-menor = 0
-maior = 0
+num = soma = cont = menor = maior = 0
 
-while resp == 'S':
+while resp in 'Ss':
     num = int(input('Digite um valor: '))
     soma += num
     cont += 1
@@ -18,6 +14,7 @@ while resp == 'S':
     else:
         maior = menor = num
 
-    resp = (input('Deseja continuar? [S/N] ')).upper()
+    resp = (input('Deseja continuar? [S/N] ')).strip()[0]
 
-print(f'A média desses números é {soma / cont}, o maior número é {maior} e o menor é {menor}')
+print(f'Você digitou {cont} números e a média desses números é {soma / cont},'
+      f'\no maior número é {maior} e o menor é {menor}')

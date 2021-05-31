@@ -1,12 +1,11 @@
 from random import randint
 pc = randint(0, 10)
-player = 11
+player = int(input('Tente adivinhar qual número eu escolhi entre 0 e 10: '))
 cont = 0
 while player != pc:
-    player = int(input('Tente adivinhar qual número eu escolhi entre 0 e 10: '))
-    if player != pc:
-        print('Errou tente denovo!')
-    else:
-        print('Parabéns você acertou!')
+    if player > pc:
+        player = int(input('Menos... tente denovo! \nQual o seu palpite? '))
+    elif player < pc:
+        player = int(input('Mais.. tente denovo! \nQual o seu palpite? '))
     cont += 1
-print(f'Você precisou de {cont} tentativas para acertar!')
+print(f'Parabéns você acertou! \nVocê precisou de {cont} tentativas para acertar!')
