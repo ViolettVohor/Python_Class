@@ -1,8 +1,8 @@
-produto_barato = ''
-valor_barato = 0
-total = 0
-cont_custo = 0
-cont = 0
+produto_barato = ''  # Nome do produto mais barato
+valor_barato = 0  # Valor do produto mais barato
+total = 0  # Total da compra
+cont_custo = 0  # Quantos produtos custam mais de 1000
+index = 0  # index dos produtos
 
 print('-'*30)
 print(f'{"SUPERMERCADO MAIS":^30}')
@@ -17,21 +17,21 @@ while True:
             break
     print('-'*30)
 
-    if cont == 0:
+    index += 1
+    if index == 1:  # Se o index = 1 então
         produto_barato = nome
         valor_barato = preco
-    else:
+    else:  # Se não, verifica se o valor é menor que o menor valor anterior
         if valor_barato > preco:
             valor_barato = preco
             produto_barato = nome
-    cont += 1
 
-    if preco > 1000:
+    if preco > 1000:  # Se o valor maior que 1000, cont_custo recebe mais um
         cont_custo += 1
 
     total += preco
 
-    if continuar == 'N':
+    if continuar == 'N':  # Se continuar = N então encerra o laço
         break
 
 print(f'Você gastou R${total}.\n'
