@@ -9,22 +9,17 @@ print(f'{"SUPERMERCADO MAIS":^30}')
 print('-'*30)
 while True:
     nome = input('Qual o nome do produto? ')
-    preco = int(input('Qual o valor? R$'))
+    preco = float(input('Qual o valor? R$'))
 
-    while True:
+    continuar = ' '
+    while continuar not in 'SN':  # Enquanto continuar não for S ou N, pede ao usuário que digite novamente
         continuar = input('Deseja continuar? [S/N] ').upper().split()[0]
-        if continuar in 'SN':
-            break
     print('-'*30)
 
     index += 1
-    if index == 1:  # Se o index = 1 então
+    if index == 1 or preco < valor_barato:  # Se o index = 1 ou se o valor é menor que o menor valor anterior
         produto_barato = nome
         valor_barato = preco
-    else:  # Se não, verifica se o valor é menor que o menor valor anterior
-        if valor_barato > preco:
-            valor_barato = preco
-            produto_barato = nome
 
     if preco > 1000:  # Se o valor maior que 1000, cont_custo recebe mais um
         cont_custo += 1
@@ -34,6 +29,6 @@ while True:
     if continuar == 'N':  # Se continuar = N então encerra o laço
         break
 
-print(f'Você gastou R${total}.\n'
+print(f'Você gastou R${total:.2f}.\n'
       f'Você comprou {cont_custo} produtos que custavam mais que R$1000.\n'
-      f'E o produto mais barato foi {produto_barato} que custa R${valor_barato}')
+      f'E o produto mais barato foi {produto_barato} que custa R${valor_barato:.2f}')
