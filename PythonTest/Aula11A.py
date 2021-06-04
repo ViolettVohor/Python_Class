@@ -11,6 +11,6 @@ cores = {'limpa': '\033[m',
          'negrito': '\033[1m'}
 
 nome = 'Oliver'
-print('Olá! Muito prazer em te conhecer, {}{}{}!!!'.format(cores['verde'], nome, cores['limpa']))
+print(f'Olá! Muito prazer em te conhecer, {cores["verde"]}{nome}{cores["limpa"]}!!!')
 
 # Exercícios: Colocar cores em todos os exercícios até agora
