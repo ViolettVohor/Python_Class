@@ -1,11 +1,11 @@
 val = list()
 while True:
-    insert = int(input('Digite um valor: '))
-    if insert in val:  # Caso o valor digitado já tenha sido inserido ele não será inserido novamente
+    inserir = int(input('Digite um valor: '))
+    if inserir in val:  # Caso o valor digitado já tenha sido inserido ele não será inserido novamente
         print('Esse valor já foi inserido.')
     else:
         print('Valor adicionado com sucesso.')
-        val.append(insert)
+        val.append(inserir)
 
     while True:  # Caso o usuário não digite S ou N, será perguntado novamente
         resp = input('Deseja continuar? [S/N] ').strip().upper()[0]

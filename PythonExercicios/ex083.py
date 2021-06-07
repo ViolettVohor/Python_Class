@@ -19,7 +19,6 @@ for i, char in enumerate(exps):  # Caso tenha algum sinal de operação logo dep
     if char == ')' and exps[i-1] in '+-*/^' and esq != dire:  # Caso tenha alguma sinal de operação logo depois de )
         erro = True  # A expressão está errado
 
-
 if erro:
     print('Sua expressão está errada!')
 else:

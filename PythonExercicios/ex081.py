@@ -1,8 +1,8 @@
-cont = 0
+# cont = 0
 val = list()
 while True:
     val.append(int(input('Digite um número: ')))
-    cont += 1
+    # cont += 1
     while True:  # Caso o usuário não digite S ou N, é feita novamente a pergunta
         resp = input('Deseja continuar? [S/N]: ').strip().upper()[0]
         if resp in 'SN':
@@ -11,7 +11,7 @@ while True:
         break
 
 print('-='*20)
-print(f'Você digitou {cont} números')
+print(f'Você digitou {len(val)} números')
 if 5 in val:  # Caso o 5 tenha sido digitado, mostra as posições
     print('O número 5 foi digitado nas posições:', end=' ')
     for i, v in enumerate(val):
