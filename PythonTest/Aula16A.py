@@ -2,7 +2,7 @@ lanche = 'Hambúrguer', 'Suco', 'Pizza', 'Pudim', 'Batata Frita'  # Tuplas são 
 # lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim', 'Batata Frita')
 # lanche[1] = 'Água'
 print(lanche[:3])  # O terceiro elemento é ignorado
-print(lanche[-3:])  # Do Terceiro elemento, de trás para frente, até o final
+print(lanche[-3:])  # Do Terceiro (antepenúltimo) elemento, de trás para frente, até o final
 print(len(lanche), '\n')
 
 for cont in range(0, len(lanche)):
