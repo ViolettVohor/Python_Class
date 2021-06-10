@@ -1,24 +1,25 @@
 dados = []
 pessoas = []
-cont = maior = menor = 0
+maior = menor = 0
 while True:
     dados.append(input('Nome: '))
-    dados.append(int(input('Peso: ')))
+    dados.append(float(input('Peso: ')))
     pessoas.append(dados[:])
 
-    cont += 1
-    if cont == 1:
+    # cont += 1
+    if len(pessoas) == 1:  # cont == 1:
+        # Caso seja o primeiro valor introduzido na lista pessoas o maior e o menor recebem o mesmo peso
         menor = maior = dados[1]
     else:
-        if dados[1] > maior:
+        if dados[1] > maior:  # Verifica se o peso inserido é maior que o anterior
             maior = dados[1]
-        elif dados[1] < menor:
+        elif dados[1] < menor:  # Verifica se o peso inserido é maior que o anterior
             menor = dados[1]
 
-    dados.clear()
+    dados.clear()  # Excluí os dados da lista para que eles não se repitam na lista pessoas
     while True:
         resp = input('Deseja continuar? [S/N]: ').strip().upper()[0]
-        if resp in 'SN':
+        if resp in 'SN':  # Verifica se o usuário deseja continuar
             break
     if resp in 'N':
         break
@@ -26,11 +27,11 @@ while True:
 print('-='*20)
 print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
 print(f'O maior peso foi {maior:.1f}Kg. Peso de', end=' ')
-for p in pessoas:
+for p in pessoas:  # Mostra as pessoas que tem o maior peso
     if p[1] == maior:
-        print(p[0], end=' ')
+        print(f'[{p[0]}]', end=' ')
 
 print(f'\nO menor peso foi {menor:.1f}Kg. Peso de', end=' ')
-for p in pessoas:
+for p in pessoas:  # Mostra as pessoas que tem o menor peso
     if p[1] == menor:
-        print(p[0], end=' ')
+        print(f'[{p[0]}]', end=' ')
