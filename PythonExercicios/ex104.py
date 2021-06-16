@@ -1,7 +1,12 @@
 def leia_int(txt):
+    """
+    -> Verifica se o valor digitado é numérico
+    :param txt: mensagem a ser mostrado para o usuário
+    :return: retorna o valor digitado pelo o usuário, caso seja um número
+    """
     while True:
         num = input(txt)
-        if num.isdigit():
+        if num.isnumeric():
             break
         else:
             print('\033[31;1mERRO! Digite um número.\033[m')

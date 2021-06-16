@@ -7,12 +7,9 @@ def notas(*num, sit=False):
     """
     dados = {'Quantidades de notas': len(num),
              'Maior nota': max(num),
-             'Menor nota': min(num)}
-    soma = 0
-    for n in num:
-        soma += n
+             'Menor nota': min(num),
+             'Média da Turma': sum(num) / len(num)}
 
-    dados['Média da Turma'] = soma / len(num)
     if sit:
         if dados['Média da Turma'] > 7:
             dados['Situação'] = 'Boa'
