@@ -3,9 +3,9 @@ estado1 = {'uf': 'São Paulo', 'sigla': 'SP'}
 estado2 = {'uf': 'Paraíba', 'sigla': 'PB'}
 brasil.append(estado1)
 brasil.append(estado2)
-print(brasil[0]['sigla'])
+print(brasil[0]['sigla'])  # Acessa o 1° dicionário dentro da lista e o item 'sigla'
 
-estado = dict()
+estado = dict()  # Cria um dicionário
 pais = list()
 for c in range(0, 3):
     estado['uf'] = input('Unidade Federativa: ')
@@ -15,3 +15,5 @@ for e in pais:
     for v in e.values():
         print(v, end=' ')
     print()
+
+# Exercício 90 - 95

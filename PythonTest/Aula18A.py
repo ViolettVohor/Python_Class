@@ -24,3 +24,5 @@ for i in range(0, 3):
 
 for p in pes:
     print(f'{p[0]} é maior de idade.' if p[1] > 20 else f'{p[0]} é menor de idade.')
+
+# Exercício 84 -89

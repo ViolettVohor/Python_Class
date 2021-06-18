@@ -26,3 +26,5 @@ print(c.index(5, 1))  # Mostra o index do número 5 apartir da posição 1
 pessoa = 'Matheus', 18, 'M', 60  # No python, as tuplas aceitam valores de tipos diferentes
 # del(pessoa)  # Deleta a tupla pessoa
 print(pessoa)
+
+# Exercícios 72 - 77

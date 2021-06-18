@@ -18,3 +18,5 @@ b[2] = 8
 print(f'Lista A: {a}')
 print(f'Lista B: {b}')
 print(f'Lista C: {c}')
+
+# Exercício 78 - 83

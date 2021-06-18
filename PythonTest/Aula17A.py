@@ -11,3 +11,5 @@ num.pop(2)  # Remove o elemento na posição 2
 
 print(num)
 print(f'Essa lista tem {len(num)} elementos')  # Mostra o comprimento da lista
+
+# Exercício 78 - 83

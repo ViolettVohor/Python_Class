@@ -25,3 +25,5 @@ print('='*30)
 print(f'A fora vale {a}')
 
 print(f'\nA soma dos valores é {r1}')
+
+# Exercício 101 - 106
