@@ -49,9 +49,9 @@ def moeda(n, moeda='R$'):
     -> Formata os valores monetários
     :param n: Valor a ser formatado
     :param moeda: (opcional) Moeda a ser utilizada na formatação
-    :return: valor 'n' formatado
+    :return: Valor 'n' formatado
     """
-    return f'{moeda}{n:.2f}'.replace('.', ',')
+    return f'{moeda}{n:.2f}'
 
 
 def resumo(n=0, porc_aum=10, porc_des=5):
@@ -63,7 +63,7 @@ def resumo(n=0, porc_aum=10, porc_des=5):
     :return: Sem retorno
     """
     print('-'*30)
-    print('RESUMO DO VALOR'.center(30))  # Centraliza o conteúdo
+    print('RESUMO DO VALOR'.center(30))  # Centraliza o texto
     print('-'*30)
 
     print(f'Preço analisado: \t{moeda(n)}')  # '\t' Cria uma tabulação
