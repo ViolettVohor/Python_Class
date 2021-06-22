@@ -1,27 +1,29 @@
-import Funções
+import Funções as Func
 from Uteis import linha, mensagem, cores
+from time import sleep
 
 esc = 0
 
 while esc != 3:
     mensagem('Menu Principal', 40)
-    cores(3, '1', True), print(' - ', end=''), cores(4, 'Ver pessoas cadastradas')
-    cores(3, '2', True), print(' - ', end=''), cores(4, 'Cadastrar novas pessoas')
-    cores(3, '3', True), print(' - ', end=''), cores(4, 'Sair do Sistema')
+    menu = ['Ver pessoas cadastradas', 'Cadastrar novas pessoas', 'Sair do Sistema']
+    Func.menu(menu)
     linha(40)
 
-    inserir = open('Dados.txt', 'a')
-    ler = open('Dados.txt', 'r')
+    # Caso o arquivo 'Dados' não exista, a função open() irá criar um arquivo novo
 
     try:
-        esc = int(input('\033[33;1mSua opção: \033[m'))
-    except ValueError:
-        cores(1, 'Erro! Digite uma opção válida.')
-
-    if esc > 3 or esc < 0:
-        cores(1, 'Erro! Digite uma opção válida.')
+        esc = Func.leia_int('\033[33;1mSua opção: \033[m')
+    except TypeError:
+        cores(1, 'Erro! Digite um número inteiro válido')
 
     if esc == 1:
-        Funções.cadastrar(inserir)
+        Func.cadastrar()
     elif esc == 2:
-        Funções.dados(ler)
+        Func.dados()
+    elif esc == 3:
+        mensagem('Saindo do sistema... Até logo!', 40)
+    else:
+        cores(1, 'Erro! Digite uma opção válida.')
+
+    sleep(1)

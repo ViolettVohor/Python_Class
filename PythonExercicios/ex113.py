@@ -1,3 +1,6 @@
+from Uteis import cores
+
+
 def leia_int(msg):
     """
     -> Utiliza a função 'input' e verifica se o valor introduzido é Inteiro
@@ -8,9 +11,9 @@ def leia_int(msg):
         try:
             return int(input(msg))
         except KeyboardInterrupt:
-            print('\033[31;1mO usuário preferiu não informar esse número!')
+            cores(1, 'O usuário preferiu não informar esse número!')
         except ValueError:
-            print('\033[31;1mErro! por favor, digite um número inteiro válido.\033[m')
+            cores(1, 'Erro! por favor, digite um número inteiro válido.')
 
 
 def leia_float(msg):
@@ -23,9 +26,9 @@ def leia_float(msg):
         try:
             return float(input(msg))
         except KeyboardInterrupt:
-            print('\033[31;1mO usuário preferiu não informar esse número!')
+            cores(1, 'O usuário preferiu não informar esse número!')
         except ValueError:
-            print('\033[31;1mErro! por favor, digite um número real válido.\033[m')
+            cores(1, 'Erro! por favor, digite um número real válido.')
 
 
 nint = leia_int('Digite um Inteiro: ')
